@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BLE Mètre</string>
+    <string name="accessibility_description">Permet d\'injecter les mesures du mètre BLE dans n\'importe quel champ texte</string>
+</resources>

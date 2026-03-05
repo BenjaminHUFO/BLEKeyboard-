@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#0A0F14">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLE MÈTRE"
+        android:textColor="#2A4258"
+        android:textSize="11sp"
+        android:letterSpacing="0.3"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Card principale -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Statut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:id="@+id/statusDot"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:background="@drawable/dot_disconnected"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Prêt"
+                android:textColor="#6B7280"
+                android:textSize="12sp"
+                android:fontFamily="monospace"/>
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="CONNECTER"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:backgroundTint="#0D1520"
+                android:textColor="#00E5A0"
+                android:strokeColor="#00E5A0"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        </LinearLayout>
+
+        <!-- Mesure -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESURE"
+            android:textColor="#2A4258"
+            android:textSize="10sp"
+            android:letterSpacing="0.3"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/measureValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textColor="#00E5A0"
+            android:textSize="64sp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/measureTs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#2A4258"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <!-- Avertissement accessibilité -->
+    <LinearLayout
+        android:id="@+id/accessibilityWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/warning_background"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⚠ Activez le service d'accessibilité pour injecter les mesures"
+            android:textColor="#F59E0B"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="ACTIVER"
+            android:textSize="11sp"
+            android:backgroundTint="#F59E0B"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

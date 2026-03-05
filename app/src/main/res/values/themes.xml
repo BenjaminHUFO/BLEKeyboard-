@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BLEKeyboard" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#00E5A0</item>
+        <item name="colorPrimaryVariant">#00A87A</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSurface">#0D1520</item>
+        <item name="android:colorBackground">#0A0F14</item>
+        <item name="android:windowBackground">#0A0F14</item>
+    </style>
+</resources>
